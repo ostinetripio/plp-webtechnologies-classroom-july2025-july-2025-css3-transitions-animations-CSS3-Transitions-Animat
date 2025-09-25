@@ -1,0 +1,52 @@
+
+
+/* Button hover effect */
+.btn-hover {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hover:hover {
+  background: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* Fade in/out box */
+.fade-box {
+  width: 200px;
+  height: 100px;
+  background: #e74c3c;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+.fade-box:hover {
+  opacity: 1;
+}
+
+
+
+/* Animation keyframes */
+@keyframes slideAndFade {
+  0% { transform: translateX(-100px); opacity: 0; }
+  50% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(100px); opacity: 0; }
+}
+
+/* Class applied via JS */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  background: #9b59b6;
+  margin-top: 15px;
+}
+
+.animate {
+  animation: slideAndFade 2s forwards;
+}
